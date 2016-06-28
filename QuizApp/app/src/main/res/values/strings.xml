@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="welcome">Welcome to Fun Quiz</string>
+    <string name="name">What\'s your Name?</string>
+    <string name="oneWord">One Word Questions</string>
+    <string name="multipleChoice">Multiple Choice Questions</string>
+    <string name="singleChoice">Single Choice Questions</string>
+    <string name="answersTitle">Answers: </string>
+    <!--Question 1 details-->
+    <string name="q1">Q1. Where the HQ of YouTube situated?</string>
+    <string name="q1_opt1">San Bruno</string>
+    <string name="q1_opt2">San Francisco</string>
+    <string name="q1_opt3">San Diego</string>
+    <string name="q1_opt4">Mountain View</string>
+    <!--Question 2 details-->
+    <string name="q2">Q2. Which one of the following is not products of Google?</string>
+    <string name="q2_opt1">GMail</string>
+    <string name="q2_opt2">YouTube</string>
+    <string name="q2_opt3">Instagram</string>
+    <string name="q2_opt4">Spaces</string>
+
+    <!--Question 3 details-->
+    <string name="q3">Q3. Alphabet is also the parent company to which of these following companies?</string>
+    <string name="q3_opt1"> Pied Piper</string>
+    <string name="q3_opt2">Verily</string>
+    <string name="q3_opt3">PrivateCore</string>
+    <string name="q3_opt4">Oculus VR</string>
+    <!--Question 4 details-->
+    <string name="q4">Q4. Identify this personality.</string>
+    <!--Question 5 details-->
+    <string name="q5">Q5. Who is the CEO of Google?</string>
+
+    <string name="submit">Submit</string>
+    <string name="title_activity_display_message">Scorecard</string>
+    <string name="thankYou">Thank you for giving this quiz.</string>
+
+
+</resources>
