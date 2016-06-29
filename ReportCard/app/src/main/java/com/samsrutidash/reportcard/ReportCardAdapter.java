@@ -60,9 +60,9 @@ public class ReportCardAdapter extends ArrayAdapter<ReportCard> {
 
         ReportCard Card = listDetails[position];
 
-        reportCardBox.subName.setText(Card.subjectName);
-        reportCardBox.subIcon.setImageResource(Card.subjectIcon);
-        reportCardBox.subGrade.setText(Card.grade);
+        reportCardBox.subName.setText(Card.getSubjectName());
+        reportCardBox.subIcon.setImageResource(Card.getSubjectIcon());
+        reportCardBox.subGrade.setText(Card.getGrade());
 
         return list;
     }

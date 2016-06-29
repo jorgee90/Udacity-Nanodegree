@@ -4,12 +4,21 @@ package com.samsrutidash.reportcard;
  * Created by samsrutidash on 6/29/2016.
  */
 public class ReportCard {
-    public String subjectName;
-    public int subjectIcon;
-    public String grade;
+    private String subjectName;
+    private int subjectIcon;
+    private String grade;
 
     public ReportCard(){
         super();
+    }
+     public String getSubjectName(){
+         return this.subjectName;
+     }
+    public String getGrade(){
+        return this.grade;
+    }
+    public int getSubjectIcon(){
+        return this.subjectIcon;
     }
 
     public ReportCard(int icon, String subjectName, String grade) {
