@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">BookApp</string>
     <string name="inputQuery">Enter your Book Query</string>
-    <string name="btnProcess">Process</string>
+    <string name="btnProcess">Search</string>
     <string name="titlehead">Tile</string>
     <string name="authorshead">Author(s)</string>
-    <string name="namehint">Name</string>
+    <string name="namehint">Enter your query</string>
+    <string name="empty">EMPTY</string>
 
 </resources>
