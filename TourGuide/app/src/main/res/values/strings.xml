@@ -4,4 +4,64 @@
     <string name="ActivityHeader">HEader</string>
     <string name="menu_search">Search</string>
     <string name="search_hint">Search for Songs, Artists, Genres</string>
+    <!--Shopping-->
+        <string name="shopping1Name">The Pavilion</string>
+        <string name="shopping2Name">Mid Valley City</string>
+        <string name="shopping3Name">Times Square KL</string>
+        <string name="shopping1Desc">
+            Address: THE PAVILION KL, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+        <string name="shopping2Desc">
+            Address: Mid Valley City, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+        <string name="shopping3Desc">
+            Address: TIMES SQUARE, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+
+
+    <!--Restoran-->
+        <string name="restoran1Name">KFC</string>
+        <string name="restoran2Name">Starbucks</string>
+        <string name="restoran3Name">Subway</string>
+        <string name="restoran1Desc">
+            Address: THE PAVILION KL, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+        <string name="restoran2Desc">
+            Address: Mid Valley City, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+        <string name="restoran3Desc">
+            Address: TIMES SQUARE, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+
+
+    <!--Attractions-->
+        <string name="attractions1Name">Paulo Tioman</string>
+        <string name="attractions2Name">Genting Highlands</string>
+        <string name="attractions3Name">Malacca City</string>
+        <string name="attractions1Desc">
+            Address: Tioman Mersing, Malaysia
+        </string>
+        <string name="attractions2Desc">
+            Address: Genting Highlands, Malaysia
+        </string>
+        <string name="attractions3Desc">
+            Malacca, Malaysia
+        </string>
+
+
+    <!--Cinema-->
+        <string name="cinema1Name">KL CENTRAL</string>
+        <string name="cinema2Name">Mid Valley CINEMA</string>
+        <string name="cinema3Name">Times Square CINEMA</string>
+        <string name="cinema1Desc">
+            Address: THE PAVILION KL, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+        <string name="cinema2Desc">
+            Address: Mid Valley City, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+        <string name="cinema3Desc">
+            Address: TIMES SQUARE, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia
+        </string>
+
+
 </resources>

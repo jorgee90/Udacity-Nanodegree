@@ -16,22 +16,28 @@ import android.widget.Toast;
 
 public class Restoran extends Fragment {
     ListView list;
-    LocationDetails location_restoran_data[] = new LocationDetails[]
-            {
-
-                    new LocationDetails("The Pavilion", "Address: Lingkaran Syed Putra, Mid Valley City, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia\n"
-                            , R.drawable.insidepavilion,14.5234, 12.3123),
-                    new LocationDetails("ABC", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123),
-                    new LocationDetails("ABC", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123)
-            };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.restoran, container, false);
+        final LocationDetails location_restoran_data[] = new LocationDetails[]
+                {
+
+                        new LocationDetails(getContext().getString(R.string.restoran1Name),
+                                getContext().getString(R.string.restoran1Desc)
+                                , R.drawable.insidepavilion,14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.restoran2Name),
+                                getContext().getString(R.string.restoran2Desc) ,
+                                R.mipmap.ic_launcher, 14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.restoran3Name),
+                                getContext().getString(R.string.restoran3Desc), R.mipmap.ic_launcher,
+                                14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.restoran1Name),
+                                getContext().getString(R.string.restoran1Desc), R.mipmap.ic_launcher,
+                                14.5234, 12.3123)
+                };
 
         list = (ListView) view.findViewById(R.id.list);
         list.setAdapter(new ListViewAdapter(view.getContext(), location_restoran_data));

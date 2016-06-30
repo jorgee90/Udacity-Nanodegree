@@ -16,24 +16,29 @@ import android.widget.Toast;
 
 public class Attractions extends Fragment {
     ListView list;
-    LocationDetails location_attractions_data[] = new LocationDetails[]
-            {
 
-                    new LocationDetails("Malacca", "Address: Malacca, Malaysia\n"
-                            , R.drawable.insidepavilion,14.5234, 12.3123),
-                    new LocationDetails("Genting", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123),
-                    new LocationDetails("Tioman", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123),
-                    new LocationDetails("Cameroon", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123)
-            };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.attractions, container, false);
+        final LocationDetails location_attractions_data[] = new LocationDetails[]
+                {
+
+                        new LocationDetails(getContext().getString(R.string.attractions1Name),
+                                getContext().getString(R.string.attractions1Desc)
+                                , R.drawable.insidepavilion,14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.attractions2Name),
+                                getContext().getString(R.string.attractions2Desc) ,
+                                R.mipmap.ic_launcher, 14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.attractions3Name),
+                                getContext().getString(R.string.attractions3Desc), R.mipmap.ic_launcher,
+                                14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.attractions1Name),
+                                getContext().getString(R.string.attractions1Desc), R.mipmap.ic_launcher,
+                                14.5234, 12.3123)
+                };
 
         list = (ListView) view.findViewById(R.id.list);
         list.setAdapter(new ListViewAdapter(view.getContext(), location_attractions_data));

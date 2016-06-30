@@ -16,24 +16,28 @@ import android.widget.Toast;
 
     public class Shopping extends Fragment {
         ListView list;
-        LocationDetails location_shopping_data[] = new LocationDetails[]
-                {
-
-                        new LocationDetails("The Pavilion", "Address: Lingkaran Syed Putra, Mid Valley City, 58000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia\n"
-                                , R.drawable.insidepavilion,14.5234, 12.3123),
-                        new LocationDetails("Mid Valley", "Descin", R.mipmap.ic_launcher,
-                        14.5234, 12.3123),
-                        new LocationDetails("Times Square", "Descin", R.mipmap.ic_launcher,
-                                14.5234, 12.3123),
-                        new LocationDetails("ABC", "Descin", R.mipmap.ic_launcher,
-                                14.5234, 12.3123)
-                };
-
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
 
             View view = inflater.inflate(R.layout.shopping, container, false);
+            final LocationDetails location_shopping_data[] = new LocationDetails[]
+                    {
+
+                            new LocationDetails(getContext().getString(R.string.shopping1Name),
+                                    getContext().getString(R.string.shopping1Desc)
+                                    , R.drawable.insidepavilion,14.5234, 12.3123),
+                            new LocationDetails(getContext().getString(R.string.shopping2Name),
+                                    getContext().getString(R.string.shopping2Desc) ,
+                                    R.mipmap.ic_launcher, 14.5234, 12.3123),
+                            new LocationDetails(getContext().getString(R.string.shopping3Name),
+                                    getContext().getString(R.string.shopping3Desc), R.drawable.insidepavilion,
+                                    14.5234, 12.3123),
+                            new LocationDetails(getContext().getString(R.string.shopping1Name),
+                                    getContext().getString(R.string.shopping1Desc), R.mipmap.ic_launcher,
+                                    14.5234, 12.3123)
+                    };
+
 
             list = (ListView) view.findViewById(R.id.list);
             list.setAdapter(new ListViewAdapter(view.getContext(), location_shopping_data));

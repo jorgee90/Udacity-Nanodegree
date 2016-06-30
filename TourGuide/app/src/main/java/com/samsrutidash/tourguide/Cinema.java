@@ -16,24 +16,28 @@ import android.widget.Toast;
 
 public class Cinema extends Fragment {
     ListView list;
-    LocationDetails location_cinemas_data[] = new LocationDetails[]
-            {
-
-                    new LocationDetails("KL Sentral", "Address:"
-                            , R.drawable.insidepavilion,14.5234, 12.3123),
-                    new LocationDetails("ABC", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123),
-                    new LocationDetails("ABC", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123),
-                    new LocationDetails("ABC", "Descin", R.mipmap.ic_launcher,
-                            14.5234, 12.3123)
-            };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.shopping, container, false);
+        View view = inflater.inflate(R.layout.cinema, container, false);
+        final LocationDetails location_cinemas_data[] = new LocationDetails[]
+                {
+
+                        new LocationDetails(getContext().getString(R.string.cinema1Name),
+                                getContext().getString(R.string.cinema1Desc)
+                                , R.drawable.insidepavilion,14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.cinema2Name),
+                                getContext().getString(R.string.cinema2Desc) ,
+                                R.mipmap.ic_launcher, 14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.cinema3Name),
+                                getContext().getString(R.string.cinema3Desc), R.mipmap.ic_launcher,
+                                14.5234, 12.3123),
+                        new LocationDetails(getContext().getString(R.string.cinema1Name),
+                                getContext().getString(R.string.cinema1Desc), R.mipmap.ic_launcher,
+                                14.5234, 12.3123)
+                };
 
         list = (ListView) view.findViewById(R.id.list);
         list.setAdapter(new ListViewAdapter(view.getContext(), location_cinemas_data));
