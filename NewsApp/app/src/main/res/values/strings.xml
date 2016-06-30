@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="btnProcess">Search</string>
+    <string name="namehint">Search News</string>
+    <string name="empty">No Results!!</string>
+    <string name="date">Date</string>
+    <string name="section">Section</string>
+
+</resources>
