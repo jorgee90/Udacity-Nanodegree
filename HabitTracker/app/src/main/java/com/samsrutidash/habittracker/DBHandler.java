@@ -20,22 +20,18 @@ public class DBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         db.execSQL(DBContract.Table1.CREATE_TABLE);
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // If a table with same name is already existed or modified like updating the table name or anything, this will delete the previous one and will create again
-        //
+        // If a table with same name is already existed or modified like updating the table name or anything,
+        //this will delete the previous one and will create again
+        
         context.deleteDatabase(DATABASE_NAME);
         onCreate(db);
     }
 
-    /**
-     * CRUD(Create, Read, Update, Delete)
-     **/
     void addHabit(HabitDetails newHabit) {
         //Create a Database Connection
         SQLiteDatabase db = this.getWritableDatabase();
@@ -58,7 +54,7 @@ public class DBHandler extends SQLiteOpenHelper {
         return cursor;
     }
 
-    // Updating single contact
+    // Updating single habit row
     public void updateHabitRow(double rowId, String newContent, String newContent1) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -68,7 +64,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }
 
-    // Deleting single contact
+    // Deleting single habit from the table
     public void deleteHabitTable() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("delete from " + DBContract.Table1.TABLE_NAME);
