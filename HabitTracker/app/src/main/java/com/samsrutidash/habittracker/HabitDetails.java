@@ -8,31 +8,39 @@ public class HabitDetails {
     String habitTitle;
     int habitFrequency;
 
-    public HabitDetails(){
+    public HabitDetails() {
 
     }
 
-    public HabitDetails( String habitTitle){
+    public HabitDetails(String habitTitle, int habitFrequency) {
         this.habitTitle = habitTitle;
+        this.habitFrequency = habitFrequency;
     }
     //Getters
 
-    public int getHabitID(){
+    public int getHabitID() {
         return habitID;
     }
-    public String getHabitTitle(){
+
+    //Setters
+    public void setHabitID(int id) {
+        this.habitID = id;
+    }
+
+    public String getHabitTitle() {
         return this.habitTitle;
     }
 
-
-    //Setters
-    public  void setHabitID(int id){
-        this.habitID = id;
-    }
-    public void set
-
-    public  void setHabitTitle(String name){
+    public void setHabitTitle(String name) {
         this.habitTitle = name;
+    }
+
+    public int getHabitFrequency() {
+        return this.habitFrequency;
+    }
+
+    public void setHabitFrequency(int i) {
+        this.habitFrequency = i;
     }
 
 

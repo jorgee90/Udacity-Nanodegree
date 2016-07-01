@@ -22,12 +22,16 @@ public final class DBContract {
         // Contacts Table Columns names
         public static final String KEY_ID = "id";
         public static final String KEY_TITLE = "title";
+        public static final String KEY_FREQUENCY = "frequency";
 
 
         public static final String CREATE_TABLE = "CREATE TABLE " +
                 TABLE_NAME + " (" +
-                KEY_ID + " INTEGER PRIMARY KEY," +
-                KEY_TITLE + TEXT_TYPE + COMMA_SEP + " )";
+                KEY_ID + " INTEGER PRIMARY KEY UNIQUE ," +
+                KEY_TITLE + TEXT_TYPE + COMMA_SEP +
+                KEY_FREQUENCY + " INTEGER" +
+                " )";
+
         public static final String DELETE_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
     }
 }
