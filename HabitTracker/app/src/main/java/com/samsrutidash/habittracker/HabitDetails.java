@@ -6,6 +6,7 @@ package com.samsrutidash.habittracker;
 public class HabitDetails {
     int habitID;
     String habitTitle;
+    int habitFrequency;
 
     public HabitDetails(){
 
@@ -28,6 +29,7 @@ public class HabitDetails {
     public  void setHabitID(int id){
         this.habitID = id;
     }
+    public void set
 
     public  void setHabitTitle(String name){
         this.habitTitle = name;

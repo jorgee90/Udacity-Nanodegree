@@ -1,23 +1,40 @@
 package com.samsrutidash.habittracker;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ListView;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         DBHandler db = new DBHandler(this);
         Log.v("DB","OK");
-        /**
-         * CRUD Operations
-         * */
+
+        ListView listView = (ListView) findViewById(R.id.listView);
+//
+//
+//        db.addHabit(new Inventory("asfasf", 5, 1,12.4124));
+//        db.addHabit(new Inventory("asfasf", 5, 1,12.4124));
+//        db.addHabit(new Inventory("asfasf", 5, 1,12.4124));
+//
+//
+//        ArrayList<Inventory> listArray = db.listAllItems();
+//        for (Inventory H : listArray) {
+//            String log = "Id: "+H.getId()+" ,Title: " + H.getProductName();
+//            // Writing Contacts to log
+//
+//            Log.d("Name: ", log);
+//
+//        }
+//
+//
         // Inserting Contacts
         Log.d("Insert: ", "Inserting ..");
         db.addHabit(new HabitDetails("SO lol"));
@@ -38,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
-
+//        ListViewAdapter customAdapter = new ListViewAdapter(listArray);
+//
+//        listView.setAdapter(customAdapter);
     }
+
 }

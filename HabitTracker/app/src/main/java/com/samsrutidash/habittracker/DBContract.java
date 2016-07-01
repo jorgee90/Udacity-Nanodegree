@@ -7,12 +7,13 @@ import android.provider.BaseColumns;
  */
 public final class DBContract {
 
-    private static final String TEXT_TYPE          = " TEXT";
-    private static final String COMMA_SEP          = ",";
+    private static final String TEXT_TYPE = " TEXT";
+    private static final String COMMA_SEP = ",";
 
     // To prevent someone from accidentally instantiating the contract class,
     // give it an empty constructor.
-    private DBContract() {}
+    private DBContract() {
+    }
 
     public static abstract class Table1 implements BaseColumns {
 
